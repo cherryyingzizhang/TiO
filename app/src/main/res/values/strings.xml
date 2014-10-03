@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">サラリマン2.0</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="title_activity_list_of_nearby_offices">ListOfNearbyOffices</string>
+    <string name="search_label">Search</string>
+    <string name="search_hint">Search Here</string>
+    <string name="title_activity_tab">TabActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_post_office2">PostOffice2</string>
+    <string name="title_activity_monitoring">MonitoringActivity</string>
+    <string name="title_activity_ranging">RangingActivity</string>
+    <string name="title_activity_list_of_amenities">ListOfAmenities</string>
+
+</resources>

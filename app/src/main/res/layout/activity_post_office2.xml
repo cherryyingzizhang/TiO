@@ -1,0 +1,242 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.cherry_zhang.androidbeaconexample.TabActivity.TabsForCompany.PostOffice.PostOffice2">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:paddingTop="20dp"
+        android:id="@+id/iv_picture_1"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"/>
+
+    <ImageView
+        android:paddingTop="20dp"
+        android:id="@+id/iv_picture_2"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"/>
+
+    <ImageView
+        android:paddingTop="20dp"
+        android:id="@+id/iv_picture_3"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"/>
+
+    <View
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#66CCFF" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_camera">
+
+        <ImageView
+            android:id="@+id/iv_camera"
+            android:src="@drawable/ic_action_camera"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:contentDescription="Take picture of item" />
+
+        <ImageView
+            android:id="@+id/iv_gallery"
+            android:src="@drawable/ic_action_storage"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="fitCenter"
+            android:contentDescription="Get picture item from"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <View
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#66CCFF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Company Name"
+            android:textSize="@dimen/post_office_text_size"
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:paddingLeft="5dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_companyName"
+            android:hint="Type here"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:inputType="textNoSuggestions"
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="# Free Seats"
+            android:textSize="@dimen/post_office_text_size"
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:paddingLeft="5dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type # Free Seats here"
+            android:gravity="right"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/et_capacity"
+            android:layout_weight="2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_amenities"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Amenities"
+            android:textSize="@dimen/post_office_text_size"
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:paddingLeft="5dp"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/tv_amenities"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#B2B2B2"
+                android:textSize="20sp"
+                />
+
+            <ImageView
+                android:src="@drawable/ic_action_next_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Office Hours"
+            android:textSize="@dimen/post_office_text_size"
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:paddingLeft="5dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_officeHours"
+            android:hint="Type Office Hours here"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:inputType="textNoSuggestions"
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Price"
+            android:textSize="@dimen/post_office_text_size"
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:paddingLeft="5dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Price Here"
+            android:gravity="right"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/et_price"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Desc."
+            android:textSize="@dimen/post_office_text_size"
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:paddingLeft="5dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_description"
+            android:hint="Type Desc. here"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:inputType="textNoSuggestions"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/b_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="POST!"
+        />
+
+</LinearLayout>
+
+</ScrollView>

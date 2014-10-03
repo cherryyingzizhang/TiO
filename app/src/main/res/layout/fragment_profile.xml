@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_blue_tio"
+    tools:context="com.example.cherry_zhang.androidbeaconexample.TabActivity.TabsForFreelance.Profile.Profile">
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+    <ImageView
+        android:id="@+id/iv_profilePicture"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/img_cherry"
+        android:layout_marginTop="90dp"
+         />
+
+        <ImageView
+            android:src="@drawable/icon_camera"
+            android:layout_width="25dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="25dp"
+            android:layout_gravity="bottom|center_horizontal"/>
+
+    </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/tv_profileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jumpei Yamane"
+            android:textColor="#FFFFFF"
+            android:layout_alignTop="@+id/view"
+            android:layout_toStartOf="@+id/view" />
+
+        <View
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="1dp"
+            android:layout_height="18dp"
+            android:paddingRight="20dp"
+            android:layout_below="@+id/fl"
+            android:paddingLeft="20dp"
+            android:layout_centerHorizontal="true"
+            android:background="#FFFFFF"
+            android:id="@+id/view" />
+
+        <TextView
+            android:text="UI Designer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:layout_alignBottom="@+id/view"
+            android:layout_toEndOf="@+id/view" />
+
+
+    <TextView
+        android:id="@+id/tv_profileDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColor="#FFFFFF"
+        android:text="Jumpei Yamane is a UI designer. He is cool! He made TiO's UI and UX design. He is amazing! He likes hackathons and sushi."
+        android:layout_below="@+id/view"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingTop="25dp"
+        android:layout_below="@+id/tv_profileDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/iv_fb"
+            android:src="@drawable/icon_facebook"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+
+        <ImageView
+            android:id="@+id/iv_twitter"
+            android:src="@drawable/icon_twitter"
+            android:layout_width="75dp"
+            android:layout_height="75dp" />
+
+        <ImageView
+            android:id="@+id/iv_linkedIn"
+            android:src="@drawable/icon_linkedin"
+            android:layout_width="73dp"
+            android:layout_height="73dp" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

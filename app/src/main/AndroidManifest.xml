@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cherry_zhang.androidbeaconexample" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_tio"
+        android:label="サラリーマン2.0"
+        android:theme="@style/CustomActionBarTheme"
+        android:largeHeap="true">
+        <meta-data
+            android:name="android.app.default_searchable"
+            android:value=".SearchFeature.SearchableActivity" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBqf9hULXNuTybllfaDoxymI-7pZU1py1E" />
+        <activity
+            android:name=".DetailOfOffice.DetailOfOffice"
+            android:label="サラリーマン2.0" >
+        </activity>
+        <activity
+            android:name=".LoginAndRegistration.LoginAndRegistrationActivity"
+            android:label="@string/app_name"
+            android:largeHeap="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SearchFeature.SearchableActivity"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TabActivity.TabActivity" />
+        </activity>
+        <activity
+            android:name=".TabActivity.TabActivity"
+            android:label="サラリーマン2.0"
+            android:largeHeap="true" >
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".SearchFeature.SearchableActivity" />
+        </activity>
+
+        <provider
+            android:name=".SearchFeature.OfficeContentProvider"
+            android:authorities="in.wptrafficanalyzer.searchdialogdemo.CountryContentProvider"
+            android:exported="true" />
+
+        <activity
+            android:name=".TabActivity.TabsForCompany.PostOffice.PostOffice2"
+            android:label="サラリーマン2.0"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TabActivity.TabActivity" />
+        </activity>
+        <activity
+            android:name=".iBeacon.MonitoringActivity"
+            android:label="@string/title_activity_monitoring" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".iBeacon.RangingActivity"
+            android:label="@string/title_activity_ranging" >
+        </activity>
+        <activity
+            android:name=".TabActivity.TabsForCompany.PostOffice.ListOfAmenities"
+            android:label="@string/title_activity_list_of_amenities" >
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.access_network_state" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+
+</manifest>

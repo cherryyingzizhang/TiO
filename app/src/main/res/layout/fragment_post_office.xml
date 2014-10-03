@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/background_camera"
+        android:text="Where is your awesome office?"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/addressEdit"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="60dp" />
+
+        <Button
+            android:id="@+id/addressButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Go"
+            android:onClick="onGetLocation"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        class="com.google.android.gms.maps.SupportMapFragment" />
+
+    <Button
+        android:id="@+id/goToNext"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="Go to Next"/>
+
+        </LinearLayout>
+
+</LinearLayout>

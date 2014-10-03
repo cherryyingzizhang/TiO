@@ -1,0 +1,86 @@
+<!-- This is a generic item/row in a listview. -->
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#55FFFFFF"
+        android:layout_gravity="center_horizontal"
+        android:foregroundGravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/bookingDate"
+            android:layout_width="match_parent"
+            android:overScrollMode="always"
+            android:textColor="@android:color/white"
+            android:background="#55000000"
+            android:text="Example Text"
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="30dp"
+            android:visibility="gone"
+            android:layout_height="match_parent"></TextView>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/IV_item_image"
+        android:src="@drawable/kitty"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        />
+
+    <View
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#66CCFF" />
+
+    <TextView
+        android:paddingLeft="7dp"
+        android:id="@+id/TV_item_title"
+        android:layout_gravity="left"
+        android:text="Title: blah"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:paddingLeft="7dp"
+        android:id="@+id/TV_item_address"
+        android:layout_gravity="left"
+        android:text="Address: blah"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:paddingLeft="7dp"
+        android:id="@+id/TV_item_company"
+        android:layout_gravity="left"
+        android:text="Company: blah"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/TV_item_price"
+        android:layout_gravity="right|bottom"
+        android:text="Price: blah"
+        android:paddingLeft="7dp"
+        android:paddingTop="5dp"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
+
+
+
+    </FrameLayout>

@@ -1,0 +1,106 @@
+<!--
+  fragment for activity_loginAndRegistration
+  -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/top_image3">
+
+    <LinearLayout
+        android:id="@+id/LL_loginForm"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo_tio" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/B_switchBetweenLoginOrRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log in"
+                android:layout_marginBottom="20dp"
+                android:textSize="30sp"
+                android:background="#00000000"
+                android:textColor="@android:color/white"
+                android:layout_gravity="right"/>
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_white_login"
+                android:scaleType="fitXY"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center">
+                <EditText
+                    android:id="@+id/editName"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:inputType="text"
+                    android:ems="10"
+                    android:layout_gravity="center_horizontal|top"
+                    android:hint="Name" />
+                <EditText
+                    android:id="@+id/ET_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:layout_gravity="center_horizontal|top"
+                    android:hint="Mail" />
+
+                <EditText
+                    android:id="@+id/ET_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:layout_gravity="center_horizontal|top" />
+
+                <EditText
+                    android:id="@+id/ET_confirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:hint="Password(Confirmation)"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:layout_gravity="center_horizontal|top" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/B_loginOrRegister"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:textColor="@android:color/white"
+            android:text="Sign Up"
+            android:textSize="20sp"
+            android:background="@drawable/button_red"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PV_progressBar"
+        android:layout_gravity="center_horizontal|center"
+        android:visibility="gone" />
+
+</FrameLayout>
